@@ -1,4 +1,3 @@
-# Strona-internetowa-S-owia-skie-szlaki
 <!DOCTYPE html>
 <html lang="pl">
 <head>
@@ -6,146 +5,199 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Wycieczka Polska: Kraków – Zakopane – Mazury – Gdańsk</title>
 <style>
+  /* Reset i podstawowe style */
+  * {
+    box-sizing: border-box;
+  }
   body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: #f8fafc;
-    margin: 0; padding: 0; color: #222;
+    background: #f0f4f8;
+    margin: 0; 
+    padding: 0; 
+    color: #333;
+    line-height: 1.6;
   }
   header {
-    background: #003366;
-    color: white;
-    padding: 2rem;
+    background: #1e3a8a; /* ciemny niebieski */
+    color: #fff;
+    padding: 2.5rem 1rem;
     text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+  header p {
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin-top: 0.5rem;
+    line-height: 1.3;
   }
   section {
     max-width: 900px;
-    margin: 2rem auto;
+    margin: 2rem auto 4rem;
     padding: 0 1rem;
   }
   h1, h2 {
-    color: #003366;
+    color: #1e3a8a;
   }
-  .day {
-    background: white;
-    padding: 1.5rem;
+  h2 {
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+    border-bottom: 2px solid #1e3a8a;
+    padding-bottom: 0.3rem;
+  }
+  article.day {
+    background: #fff;
+    padding: 1.8rem 1.5rem;
     margin-bottom: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(30,58,138,0.1);
+    transition: box-shadow 0.3s ease;
+  }
+  article.day:hover {
+    box-shadow: 0 6px 18px rgba(30,58,138,0.2);
   }
   .activity {
-    margin: 0.7rem 0;
+    margin: 0.6rem 0;
+    font-size: 1rem;
   }
   .emoji {
     font-size: 1.3rem;
-    margin-right: 0.3rem;
+    margin-right: 0.4rem;
   }
   footer {
-    text-align: center;
-    padding: 1rem;
-    background: #003366;
+    background: #1e3a8a;
     color: white;
-    margin-top: 3rem;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    font-size: 0.9rem;
+  }
+  @media (max-width: 600px) {
+    section {
+      padding: 0 0.5rem;
+    }
+    article.day {
+      padding: 1.2rem 1rem;
+    }
   }
 </style>
 </head>
 <body>
 
 <header>
-  <h1>🇵🇱 Pełna Wycieczka po Polsce: Kraków – Zakopane – Mazury – Gdańsk</h1>
-  <p><strong>SŁOWIAŃSKIE SZLAKI <br> ODKRYJ POLSKĘ W TYDZIEŃ!</strong></p>
+  <h1>OFERTA DLA TURYSTÓW Z DANII</h1>
+  <p><strong>SŁOWIAŃSKIE SZLAKI<br>ODKRYJ POLSKĘ W TYDZIEŃ!</strong></p>
 </header>
 
 <section>
 
   <article class="day">
     <h2>Dzień 1 – Przylot i Zakopane</h2>
-    <div class="activity">✈️ 07:00 – Przylot do Krakowa (Lotnisko Kraków-Balice)</div>
-    <div class="activity">🚌 Transfer: Kraków → Zakopane – 110 km / 2 h 10 min</div>
-    <div class="activity">🏨 09:30 – Zakwaterowanie w Hotelu Aries & Spa Zakopane, ciepły posiłek</div>
-    <div class="activity">🚌 11:00 – Transfer: Zakopane → Palenica Białczańska – 25 km / 35 min</div>
-    <div class="activity">🥾 11:30–17:30 – Spacer do Morskiego Oka (asfaltowa trasa 8 km w jedną stronę = 16 km w obie strony)</div>
-    <div class="activity">🚌 18:00 – Powrót do Zakopanego – 25 km / 35 min</div>
-    <div class="activity">🛍️ 19:30 – Czas wolny na Krupówkach</div>
-    <div class="activity">🍽️ 20:30 – Kolacja w regionalnej karczmie</div>
+    <div class="activity"><span class="emoji">✈️</span>07:00 – Przylot do Krakowa (Lotnisko Kraków-Balice)</div>
+    <div class="activity"><span class="emoji">🚌</span>Transfer: Kraków → Zakopane – 110 km / 2 h 10 min</div>
+    <div class="activity"><span class="emoji">🏨</span>09:30 – Zakwaterowanie w Hotelu Aries & Spa Zakopane, ciepły posiłek</div>
+    <div class="activity"><span class="emoji">🚌</span>11:00 – Transfer: Zakopane → Palenica Białczańska – 25 km / 35 min</div>
+    <div class="activity"><span class="emoji">🥾</span>11:30–17:30 – Spacer do Morskiego Oka (asfaltowa trasa 8 km w jedną stronę = 16 km w obie strony)</div>
+    <div class="activity"><span class="emoji">🚌</span>18:00 – Powrót do Zakopanego – 25 km / 35 min</div>
+    <div class="activity"><span class="emoji">🛍️</span>19:30 – Czas wolny na Krupówkach</div>
+    <div class="activity"><span class="emoji">🍽️</span>20:30 – Kolacja w regionalnej karczmie</div>
   </article>
 
   <article class="day">
     <h2>Dzień 2 – Kraków</h2>
-    <div class="activity">🍽️ 07:30 – Śniadanie w hotelu</div>
-    <div class="activity">🚌 08:30–10:00 – Transfer: Zakopane → Kraków – 110 km / 2 h</div>
-    <div class="activity">🏨 10:00 – Zakwaterowanie w Hotelu Pod Aniołami, powitalny upominek</div>
-    <div class="activity">🚶‍♂️ 14:00–18:00 – Zwiedzanie z przewodnikiem: Rynek, Kościół Mariacki, Sukiennice, Wawel, Smok Wawelski, Trakt Królewski</div>
-    <div class="activity">🍽️ 18:30 – Kolacja – Restauracja „U Babci Maliny”</div>
-    <div class="activity">🌳 20:00 – Spacer po Plantach</div>
+    <div class="activity"><span class="emoji">🍽️</span>07:30 – Śniadanie w hotelu</div>
+    <div class="activity"><span class="emoji">🚌</span>08:30–10:00 – Transfer: Zakopane → Kraków – 110 km / 2 h</div>
+    <div class="activity"><span class="emoji">🏨</span>10:00 – Zakwaterowanie w Hotelu Pod Aniołami, powitalny upominek</div>
+    <div class="activity"><span class="emoji">🚶‍♂️</span>14:00–18:00 – Zwiedzanie z przewodnikiem: Rynek, Kościół Mariacki, Sukiennice, Wawel, Smok Wawelski, Trakt Królewski</div>
+    <div class="activity"><span class="emoji">🍽️</span>18:30 – Kolacja – Restauracja „U Babci Maliny”</div>
+    <div class="activity"><span class="emoji">🌳</span>20:00 – Spacer po Plantach</div>
   </article>
 
   <article class="day">
     <h2>Dzień 3 – Wieliczka</h2>
-    <div class="activity">🍽️ 09:00 – Śniadanie w hotelu</div>
-    <div class="activity">🚌 09:30 – Transfer: Kraków → Wieliczka – 15 km / 30 min</div>
-    <div class="activity">⛏️ 10:00–13:00 – Zwiedzanie Kopalni Soli Wieliczka</div>
-    <div class="activity">🍽️ 13:10–14:10 – Obiad: Karczma Górnicza</div>
-    <div class="activity">🏨 14:15 – Zakwaterowanie: Hotel Grand Sal</div>
-    <div class="activity">🌳 14:30–16:00 – Czas wolny w Parku św. Kingi</div>
-    <div class="activity">🍽️ 16:30–18:00 – Kolacja: Restauracja „Klimaty Południa”</div>
-    <div class="activity">🌆 18:00–20:00 – Spacer po uzdrowiskowej części Wieliczki, tężnia solankowa</div>
+    <div class="activity"><span class="emoji">🍽️</span>09:00 – Śniadanie w hotelu</div>
+    <div class="activity"><span class="emoji">🚌</span>09:30 – Transfer: Kraków → Wieliczka – 15 km / 30 min</div>
+    <div class="activity"><span class="emoji">⛏️</span>10:00–13:00 – Zwiedzanie Kopalni Soli Wieliczka</div>
+    <div class="activity"><span class="emoji">🍽️</span>13:10–14:10 – Obiad: Karczma Górnicza</div>
+    <div class="activity"><span class="emoji">🏨</span>14:15 – Zakwaterowanie: Hotel Grand Sal</div>
+    <div class="activity"><span class="emoji">🌳</span>14:30–16:00 – Czas wolny w Parku św. Kingi</div>
+    <div class="activity"><span class="emoji">🍽️</span>16:30–18:00 – Kolacja: Restauracja „Klimaty Południa”</div>
+    <div class="activity"><span class="emoji">🌆</span>18:00–20:00 – Spacer po uzdrowiskowej części Wieliczki, tężnia solankowa</div>
   </article>
 
   <article class="day">
     <h2>Dzień 4 – Białowieża</h2>
-    <div class="activity">🍽️ 06:00 – Śniadanie w hotelu</div>
-    <div class="activity">🚌 06:30–13:00 – Transfer: Wieliczka → Białowieża – 450 km / 6,5 h</div>
-    <div class="activity">🌲 13:00–14:30 – Spacer z przewodnikiem po Rezerwacie Ścisłym BPN</div>
-    <div class="activity">🏛️ 15:30–17:00 – Zwiedzanie Muzeum Przyrodniczo-Leśnego BPN</div>
-    <div class="activity">🚌 17:00–17:15 – Transfer: Muzeum → Hotel Białowieski – 1 km</div>
-    <div class="activity">🍽️ 19:00 – Kolacja w hotelowej restauracji</div>
+    <div class="activity"><span class="emoji">🍽️</span>06:00 – Śniadanie w hotelu</div>
+    <div class="activity"><span class="emoji">🚌</span>06:30–13:00 – Transfer: Wieliczka → Białowieża – 450 km / 6,5 h</div>
+    <div class="activity"><span class="emoji">🌲</span>13:00–14:30 – Spacer z przewodnikiem po Rezerwacie Ścisłym BPN</div>
+    <div class="activity"><span class="emoji">🏛️</span>15:30–17:00 – Zwiedzanie Muzeum Przyrodniczo-Leśnego BPN</div>
+    <div class="activity"><span class="emoji">🚌</span>17:00–17:15 – Transfer: Muzeum → Hotel Białowieski – 1 km</div>
+    <div class="activity"><span class="emoji">🍽️</span>19:00 – Kolacja w hotelowej restauracji</div>
   </article>
 
   <article class="day">
     <h2>Dzień 5 – Mikołajki</h2>
-    <div class="activity">🍽️ 08:30 – Śniadanie w hotelu</div>
-    <div class="activity">🚌 10:00–13:30 – Transfer: Białowieża → Mikołajki – 250 km / 3,5 h</div>
-    <div class="activity">⛵ 14:00–16:00 – Rejs po Jeziorze Śniardwy – 2 h</div>
-    <div class="activity">🍽️ 16:15 – Obiad: Tawerna „Żagiel”</div>
-    <div class="activity">☕ 17:30–19:00 – Czas wolny przy marinie</div>
-    <div class="activity">🍽️ 19:30 – Kolacja – restauracja hotelowa, bufet regionalny</div>
-    <div class="activity">🏨 Nocleg – Hotel Gołębiewski</div>
+    <div class="activity"><span class="emoji">🍽️</span>08:30 – Śniadanie w hotelu</div>
+    <div class="activity"><span class="emoji">🚌</span>10:00–13:30 – Transfer: Białowieża → Mikołajki – 250 km / 3,5 h</div>
+    <div class="activity"><span class="emoji">⛵</span>14:00–16:00 – Rejs po Jeziorze Śniardwy – 2 h</div>
+    <div class="activity"><span class="emoji">🍽️</span>16:15 – Obiad: Tawerna „Żagiel”</div>
+    <div class="activity"><span class="emoji">☕</span>17:30–19:00 – Czas wolny przy marinie</div>
+    <div class="activity"><span class="emoji">🍽️</span>19:30 – Kolacja – restauracja hotelowa, bufet regionalny</div>
+    <div class="activity"><span class="emoji">🏨</span>Nocleg – Hotel Gołębiewski</div>
   </article>
 
   <article class="day">
     <h2>Dzień 6 – Malbork → Sopot → Gdańsk</h2>
-    <div class="activity">🍽️ 08:00 – Śniadanie w hotelu</div>
-    <div class="activity">🚌 08:30–11:00 – Transfer: Mikołajki → Malbork – 200 km / 2,5 h</div>
-    <div class="activity">🏰 11:00–13:30 – Zwiedzanie Zamku Krzyżackiego w Malborku</div>
-    <div class="activity">🍽️ 13:30–14:30 – Obiad: Karczma Zamkowa</div>
-    <div class="activity">🛍️ 14:30–16:00 – Czas wolny w Malborku</div>
-    <div class="activity">🌉 16:00–17:00 – Spacer nad Nogatem</div>
-    <div class="activity">🍽️ 18:00 – Kolacja: Restauracja "U Flisaka"</div>
-    <div class="activity">🏨 Nocleg – Hotel Centrum Malbork</div>
+    <div class="activity"><span class="emoji">🍽️</span>08:00 – Śniadanie w hotelu</div>
+    <div class="activity"><span class="emoji">🚌</span>08:30–11:00 – Transfer: Mikołajki → Malbork – 200 km / 2,5 h</div>
+    <div class="activity"><span class="emoji">🏰</span>11:00–13:30 – Zwiedzanie Zamku Krzyżackiego w Malborku</div>
+    <div class="activity"><span class="emoji">🍽️</span>13:30–14:30 – Obiad: Karczma Zamkowa</div>
+    <div class="activity"><span class="emoji">🛍️</span>14:30–16:00 – Czas wolny w Malborku</div>
+    <div class="activity"><span class="emoji">🌉</span>16:00–17:00 – Spacer nad Nogatem</div>
+    <div class="activity"><span class="emoji">🍽️</span>18:00 – Kolacja: Restauracja "U Flisaka"</div>
+    <div class="activity"><span class="emoji">🏨</span>Nocleg – Hotel Centrum Malbork</div>
   </article>
 
   <article class="day">
     <h2>Dzień 7 – Sopot i Gdańsk</h2>
-    <div class="activity">🍽️ 08:00 – Śniadanie w hotelu</div>
-    <div class="activity">🚌 08:45–10:15 – Transfer: Malbork → Sopot – 80 km / 1,5 h</div>
-    <div class="activity">🌊 10:30–12:00 – Spacer po Molo w Sopocie</div>
-    <div class="activity">🍽️ 12:15–13:30 – Obiad: Restauracja „Bar Przystań”</div>
-    <div class="activity">🚌 13:30–14:15 – Transfer: Sopot → Gdańsk – 15 km / 45 min</div>
-    <div class="activity">🏨 14:15 – Zakwaterowanie w Hotelu Hanza Gdańsk</div>
-    <div class="activity">🏛️ 14:30–17:00 – Zwiedzanie Gdańska z przewodnikiem</div>
-    <div class="activity">🛍️ 17:00–18:30 – Czas wolny</div>
-    <div class="activity">🍽️ 19:00 – Kolacja pożegnalna: Restauracja Goldwasser</div>
+    <div class="activity"><span class="emoji">🍽️</span>08:00 – Śniadanie w hotelu</div>
+    <div class="activity"><span class="emoji">🚌</span>08:45–10:15 – Transfer: Malbork → Sopot – 80 km / 1,5 h</div>
+    <div class="activity"><span class="emoji">🌊</span>10:30–12:00 – Spacer po Molo w Sopocie</div>
+    <div class="activity"><span class="emoji">🍽️</span>12:15–13:30 – Obiad: Restauracja „Bar Przystań”</div>
+    <div class="activity"><span class="emoji">🚌</span>13:30–14:15 – Transfer: Sopot → Gdańsk – 15 km / 45 min</div>
+    <div class="activity"><span class="emoji">🏨</span>14:15 – Zakwaterowanie w Hotelu Hanza Gdańsk</div>
+    <div class="activity"><span class="emoji">🏛️</span>14:30–17:00 – Zwiedzanie Gdańska z przewodnikiem</div>
+    <div class="activity"><span class="emoji">🛍️</span>17:00–18:30 – Czas wolny</div>
+    <div class="activity"><span class="emoji">🍽️</span>19:00 – Kolacja pożegnalna: Restauracja Goldwasser</div>
   </article>
 
   <article class="day">
     <h2>Dzień 8 – Powrót</h2>
-    <div class="activity">🍽️ 06:30 – Śniadanie na wynos</div>
-    <div class="activity">🚌 07:00–11:00 – Transfer: Gdańsk → Warszawa – 340 km / 4 h</div>
-    <div class="activity">🏛️ 11:00–14:00 – Zwiedzanie Warszawy z przewodnikiem</div>
-    <div class="activity">🍽️ 14:00–15:30 – Obiad: Restauracja "Bazyliszek"</div>
-    <div class="activity">🌳 15:30–17:30 – Spacer i czas wolny: Łazienki Królewskie</div>
-    <div class="activity">🚌 17:30–18:00 – Transfer: do Lotniska Chopina – 10 km / 30 min</div>
-    <div class="activity">🍽️ 18:30–20:00 – Kolacja na lotnisku</div>
-    <div class="activity">✈️ 23:00 – Wylot: Warszawa (WAW) → Kopenhaga (CPH)</div>
-
+    <div class="activity"><span class="emoji">🍽️</span>06:30 – Śniadanie na wynos</div>
+    <div class="activity"><span class="emoji">🚌</span>07:00–11:00 – Transfer: Gdańsk → Warszawa – 340 km / 4 h</div>
+    <div class="activity"><span class="emoji">🏛️</span>11:00–14:00 – Zwiedzanie Warszawy z przewodnikiem</div>
+    <div class="activity"><span class="emoji">🍽️</span>14:00–15:30 – Obiad: Restauracja "Bazyliszek"</div>
+    <div class="activity"><span class="emoji">🌳</span>15:30–17:30 – Spacer i czas wolny: Łazienki Królewskie</div>
+    <div class="activity"><span class="emoji">🚌</span>17:30–18:00 – Transfer do Lotniska Chopina – 10 km / 30 min</div>
+    <div class="activity"><span class="emoji">🍽️</span>18:30–20:00 – Kolacja na lotnisku</div>
+    <div class="activity"><span class="emoji">✈️</span>23:00 – Wylot: Warszawa (WAW) → Kopenhaga (CPH)</div>
   </article>
+
+</section>
+
+<footer>
+  &copy; 2025 Słowiańskie Szlaki – Wszystkie prawa zastrzeżone
+</footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
